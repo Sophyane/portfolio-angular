@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './global-container.component.html',
   styleUrl: './global-container.component.scss',
 })
-export class GlobalContainerComponent {
-  constructor() {}
-}
+export class GlobalContainerComponent {}
