@@ -1,1 +1,14 @@
-<p>global-container works!</p>
+<div [ngClass]="{ 'dark': isDarkMode, 'light': !isDarkMode }">
+  <div
+    class="flex justify-between items-center bg-teal-600 text-white dark:bg-slate-900 p-5 font-semibold text-lg shadow-lg"
+  >
+    Dark Mode with Angular and TailwindCSS
+    <button
+      class="flex transition-transform hover:scale-125 align-middle"
+      (click)="toggleDarkMode()"
+    >
+      <span *ngIf="!isDarkMode" class="material-icons">dark_mode</span>
+      <span *ngIf="isDarkMode" class="material-icons">light_mode</span>
+    </button>
+  </div>
+</div>
