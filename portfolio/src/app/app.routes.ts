@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { GlobalContainerComponent } from './global/containers/global-container/global-container.component';
+import { DetailsInfoCardComponent } from "./global/components/details-info-card/details-info-card.component";
 
 export const routes: Routes = [
   {
     path: '',
-    component: GlobalContainerComponent,
-  },
-  {
-    path: 'global',
-    component: GlobalContainerComponent,
+    component: DetailsInfoCardComponent,
   },
   {
     path: '**',
-    component: GlobalContainerComponent,
+    component: DetailsInfoCardComponent,
   },
+  {
+    path: 'details',
+    component: DetailsInfoCardComponent,
+  }
 ];

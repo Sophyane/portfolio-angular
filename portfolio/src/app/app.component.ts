@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { GlobalContainerComponent } from "./global/containers/global-container/global-container.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, GlobalContainerComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
