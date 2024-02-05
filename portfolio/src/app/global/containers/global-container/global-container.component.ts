@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import { DOCUMENT, NgClass, NgIf } from "@angular/common";
 import { CoverComponent } from "../../components/cover/cover.component";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: "app-global-container",
@@ -9,7 +10,8 @@ import { CoverComponent } from "../../components/cover/cover.component";
   imports: [
     NgIf,
     NgClass,
-    CoverComponent
+    CoverComponent,
+    RouterOutlet
   ],
   styleUrls: ["./global-container.component.scss"]
 })

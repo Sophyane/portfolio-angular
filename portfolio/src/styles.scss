@@ -12,10 +12,10 @@ body {
 
 @layer utilities {
   .dark {
-    @apply bg-slate-700 text-white;
+    @apply bg-slate-700 text-amber-100;
   }
 
   .light {
-    @apply bg-amber-50 text-slate-700;
+    @apply bg-amber-50 text-amber-950;
   }
 }
