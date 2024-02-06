@@ -2,24 +2,45 @@
   <div
     class="flex justify-between items-center bg-green-900 bg-opacity-60 dark:bg-slate-900 p-5 text-lg light:text-amber-300  font-extrabold "
   >
-    Welcome to my portfolio website, made with Angular and TailwindCSS
+    Welcome to Badji Sofiane's portfolio website, made with Angular and TailwindCSS
     <button
       (click)="toggleDarkMode()"
       class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden
       text-sm font-medium text-gray-900 group bg-gradient-to-br from-teal-300 to-lime-300
       group-hover:from-teal-300 group-hover:to-lime-300 hover:text-white dark:text-white
        focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 rounded-full">
-<span
-  class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900  group-hover:bg-opacity-0 material-icons rounded-full"
-  *ngIf="!isDarkMode">
-dark_mode
-</span>
-      <span
-        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 material-icons rounded-full"
-        *ngIf="isDarkMode">
+      @if (isDarkMode) {
+        <span
+          class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 material-icons rounded-full"
+          *ngIf="isDarkMode">
 light_mode
 </span>
+      } @else {
+        <span
+          class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900  group-hover:bg-opacity-0 material-icons rounded-full"
+          *ngIf="!isDarkMode">
+dark_mode
+</span>
+      }
     </button>
   </div>
 </div>
 <app-cover></app-cover>
+
+<ul
+  class=" text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+  <li class="w-full">
+    <a routerLink="/details"
+       class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white"
+       aria-current="page">CV</a>
+  </li>
+  <li class="w-full">
+    <a routerLink="/map"
+       class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">
+      MAP </a>
+  </li>
+
+</ul>
+<router-outlet></router-outlet>
+
+

@@ -1,24 +1,22 @@
-import { Component, OnInit, Renderer2, Inject } from '@angular/core';
-import { DOCUMENT, NgClass, NgIf } from "@angular/common";
-import { CoverComponent } from "../../components/cover/cover.component";
-import { RouterOutlet } from "@angular/router";
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { DOCUMENT, NgClass, NgIf } from '@angular/common';
+import { CoverComponent } from '../../components/cover/cover.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: "app-global-container",
-  templateUrl: "./global-container.component.html",
+  selector: 'app-global-container',
+  templateUrl: './global-container.component.html',
   standalone: true,
-  imports: [
-    NgIf,
-    NgClass,
-    CoverComponent,
-    RouterOutlet
-  ],
-  styleUrls: ["./global-container.component.scss"]
+  imports: [NgIf, NgClass, CoverComponent, RouterOutlet, RouterLink],
+  styleUrls: ['./global-container.component.scss'],
 })
 export class GlobalContainerComponent implements OnInit {
   isDarkMode = false;
 
-  constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document,
+  ) {}
 
   ngOnInit() {
     if (typeof localStorage !== 'undefined') {
