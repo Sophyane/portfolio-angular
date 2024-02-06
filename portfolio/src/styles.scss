@@ -19,3 +19,27 @@ body {
     @apply bg-amber-50 text-amber-950;
   }
 }
+
+// some styles for material stuff to avoid doing deprecated ::ng-deep
+.mat-expansion-panel {
+  box-shadow: none !important;
+}
+
+/* Dark mode styles */
+.dark .mat-expansion-panel {
+  @apply bg-slate-700 text-amber-100;
+}
+
+.light .mat-expansion-panel {
+  @apply bg-amber-50 text-amber-950;
+}
+
+.light .mat-expansion-indicator::after {
+  border-color: black;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+
