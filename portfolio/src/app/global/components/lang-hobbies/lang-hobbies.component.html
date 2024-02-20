@@ -1,1 +1,44 @@
-<p>lang-hobbies works!</p>
+<div class="grid md:grid-cols-2 row w-full justify-center">
+  <div class="col-auto m-1">
+    <h2 class="text-4xl font-bold"> Langues : </h2>
+    <section>
+      @for (lang of languages; track lang) {
+        <div
+          class="flex items-center justify-around w-full mb-1 max-w-xs p-4 space-x-4
+      rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse
+      divide-gray-200 rounded-lg shadow dark:text-gray-400
+      dark:divide-gray-700 space-x dark:bg-gray-800">
+          <ngx-emoji [emoji]="lang.emoji"></ngx-emoji>
+          <div class="ps-4 text-sm font-normal">
+            {{ lang.name.charAt(0).toUpperCase() + lang.name.slice(1) }}
+          </div>
+          <mat-divider vertical></mat-divider>
+          <div class="ps-4 text-sm font-normal">
+            {{ lang.level }}
+          </div>
+        </div>
+      }
+    </section>
+  </div>
+  <div class="col-auto">
+
+    <h2 class="text-4xl font-bold"> Hobbies : </h2>
+    <section class="grid md:grid-cols-2">
+      @for (hobby of hobbies; track hobby) {
+        <div
+          class="flex flex-wrap items-center w-full mb-1 max-w-xs p-4 space-x-4
+       rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse
+       divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700
+        space-x dark:bg-gray-800">
+          <ngx-emoji [emoji]="hobby.emoji"></ngx-emoji>
+          <div class="ps-4 text-sm font-normal ml-2.5">
+            {{ hobby.name.charAt(0).toUpperCase() + hobby.name.slice(1) }}
+          </div>
+        </div>
+      }
+    </section>
+  </div>
+</div>
+
+
+
