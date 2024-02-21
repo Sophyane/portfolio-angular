@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@ctrl/ngx-emoji-mart/picker';
 
 html,
 body {
@@ -12,7 +13,7 @@ body {
 
 @layer utilities {
   .dark {
-    @apply bg-slate-700 text-amber-100;
+    @apply bg-slate-700 text-white;
   }
 
   .light {
@@ -41,5 +42,3 @@ body {
 .mat-expansion-panel-body {
   padding: 0 !important;
 }
-
-
