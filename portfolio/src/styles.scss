@@ -42,3 +42,11 @@ body {
 .mat-expansion-panel-body {
   padding: 0 !important;
 }
+
+.light .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+  @apply bg-amber-50 text-amber-950;
+}
+
+.dark .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+  @apply bg-slate-700 text-amber-100;
+}
