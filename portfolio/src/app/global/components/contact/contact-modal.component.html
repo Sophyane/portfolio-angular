@@ -1,0 +1,9 @@
+<h1>Hi {{ data.firstName }}</h1>
+<div>
+  <h2>Une question ? une demande ? n'hésite pas :)  </h2>
+  <input  placeholder="Enter your name">
+</div>
+<div>
+  <button (click)="dialogRef.close(data.firstName)">OK</button>
+  <button (click)="dialogRef.close()">Cancel</button>
+</div>
