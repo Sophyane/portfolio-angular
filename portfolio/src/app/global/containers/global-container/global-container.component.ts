@@ -67,7 +67,8 @@ export class GlobalContainerComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open<DialogData>(ContactModalComponent, {
-      width: '250px',
+      panelClass: 'contact-dialog-container',
+      width: '70%',
     });
 
     dialogRef.closed.subscribe((result) => {
