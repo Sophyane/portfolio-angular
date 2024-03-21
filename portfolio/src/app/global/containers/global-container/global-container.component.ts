@@ -1,18 +1,19 @@
-import { Component, inject, Inject, OnInit, Renderer2 } from '@angular/core';
+import {
+  Component,
+  inject,
+  Inject,
+  OnDestroy,
+  OnInit,
+  Renderer2,
+} from '@angular/core';
 import { DOCUMENT, NgClass, NgIf } from '@angular/common';
 import { CoverComponent } from '../../components/cover/cover.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ContactModalComponent } from '../../components/contact/contact-modal.component';
 import { Dialog } from '@angular/cdk/dialog';
-
-export interface DialogData {
-  firstName: string;
-  lastName: string;
-  telephone: string;
-  email: string;
-  labelInterest: string;
-  message: string;
-}
+import { Subscription } from 'rxjs';
+import { ContactFacade } from '../../facades/contact.facade';
+import { Contact } from '../../models/global.model';
 
 @Component({
   selector: 'app-global-container',
@@ -28,17 +29,12 @@ export interface DialogData {
   ],
   styleUrls: ['./global-container.component.scss'],
 })
-export class GlobalContainerComponent implements OnInit {
+export class GlobalContainerComponent implements OnInit, OnDestroy {
   isDarkMode = false;
   public dialog: Dialog = inject(Dialog);
-  contact: DialogData | undefined = {
-    firstName: '',
-    lastName: '',
-    telephone: '',
-    email: '',
-    labelInterest: '',
-    message: '',
-  };
+  private contactFacade: ContactFacade = inject(ContactFacade);
+  subscription: Subscription = new Subscription();
+  contact!: Contact;
 
   constructor(
     private renderer: Renderer2,
@@ -66,14 +62,31 @@ export class GlobalContainerComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open<DialogData>(ContactModalComponent, {
+    const dialogRef = this.dialog.open<Contact>(ContactModalComponent, {
       panelClass: 'contact-dialog-container',
       width: '70%',
     });
 
-    dialogRef.closed.subscribe((result) => {
-      console.log('The dialog was closed');
-      this.contact = result;
-    });
+    this.subscription.add(
+      dialogRef.closed.subscribe((result) => {
+        console.log('The dialog was closed: ', result);
+        if (result)
+          this.contact = {
+            id: '1',
+            firstName: result?.firstName,
+            lastName: result.lastName,
+            email: result.email,
+            telephone: result.telephone,
+            subject: result.subject,
+            message: result.message,
+          };
+        this.contactFacade.updateContact(this.contact);
+        console.log('Stored contact: ', this.contact);
+      }),
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
