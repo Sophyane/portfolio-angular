@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { GlobalContainerComponent } from "./global/containers/global-container/global-container.component";
+import { GlobalContainerComponent } from './global/containers/global-container/global-container.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,4 @@ import { GlobalContainerComponent } from "./global/containers/global-container/g
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'portfolio';
-}
+export class AppComponent {}

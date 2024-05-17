@@ -28,28 +28,22 @@
              class="custom-input"
              placeholder="name@company.com" required>
     </div>
-      <div>
-        <label for="subject" class="custom-label">Sujet</label>
-        <input formControlName="subject" type="text" name="subject"
-               id="subject" placeholder="Sujet"
-               class="custom-input"
-               required>
-      </div>
-      <div>
-        <label for="message" class="custom-label">Message</label>
-        <textarea formControlName="message" type="text" name="message"
-                  id="message" placeholder="Ton message" cols="5"
-                  rows="5"
-                  class="resize-none custom-input"
-                  required>
+    <div>
+      <label for="subject" class="custom-label">Sujet</label>
+      <input formControlName="subject" type="text" name="subject"
+             id="subject" placeholder="Sujet"
+             class="custom-input"
+             required>
+    </div>
+    <div>
+      <label for="message" class="custom-label">Message</label>
+      <textarea formControlName="message" type="text" name="message"
+                id="message" placeholder="Ton message" cols="5"
+                rows="5"
+                class="resize-none custom-input"
+                required>
       </textarea>
-      </div>
-
-      <button type="submit"
-              class="custom-button w-full"
-              (click)="dialogRef.close()">Envoyer
-      </button>
-
+    </div>
   </form>
 </section>
 
