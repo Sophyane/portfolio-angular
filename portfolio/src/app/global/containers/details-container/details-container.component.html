@@ -1,28 +1,21 @@
 <mat-accordion class="example-headers-align" multi>
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title class="justify-center text-3xl xs:text-2xl dark:text-amber-50">
-        Experience professionnelle
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <app-details-info-card />
-  </mat-expansion-panel>
+  @for(component of componentDetails; track component) {
 
   <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title class="justify-center text-3xl xs:text-2xl dark:text-amber-50">
-        Formation
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <app-education />
+     <mat-expansion-panel-header>
+       <mat-panel-title class="justify-center text-3xl xs:text-2xl dark:text-amber-50">
+  {{ component.label }}
+  </mat-panel-title>
+</mat-expansion-panel-header>
+  @if(component.name === 'details-info-card') {
+  <app-details-info-card />
+  }
+  @if(component.name === 'education') {
+  <app-education />
+  }
+  @if(component.name === 'lang-hobbies') {
+  <app-lang-hobbies />
+  }
   </mat-expansion-panel>
-
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title class="justify-center text-3xl xs:text-2xl dark:text-amber-50">
-        Langues & Centre d'interet
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <app-lang-hobbies />
-  </mat-expansion-panel>
+  }
 </mat-accordion>
