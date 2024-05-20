@@ -6,13 +6,14 @@ import {
   Validators,
 } from '@angular/forms';
 import { Contact } from '../../models/global.model';
-import { MatFormField } from '@angular/material/form-field';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatButton } from '@angular/material/button';
+import { MatInput } from '@angular/material/input';
 
 @Component({
   selector: 'app-contact-modal',
   standalone: true,
-  imports: [MatFormField, ReactiveFormsModule, MatButton],
+  imports: [MatFormField, ReactiveFormsModule, MatButton, MatLabel, MatInput],
   templateUrl: './contact-modal.component.html',
   styleUrl: './contact-modal.component.scss',
 })
