@@ -10,6 +10,12 @@ import { ExperienceComponent } from '../../components/experience/experience.comp
 import { EducationComponent } from '../../components/education/education.component';
 import { LangHobbiesComponent } from '../../components/lang-hobbies/lang-hobbies.component';
 import { RouterLink } from '@angular/router';
+import { NgFor, NgIf } from '@angular/common';
+
+export interface ComponentDetail {
+  name: string;
+  label: string;
+}
 
 @Component({
   selector: 'app-details-container',
@@ -26,8 +32,15 @@ import { RouterLink } from '@angular/router';
     EducationComponent,
     LangHobbiesComponent,
     RouterLink,
+    NgFor,
+    NgIf,
   ],
   templateUrl: './details-container.component.html',
   styleUrl: './details-container.component.scss',
 })
-export class DetailsContainerComponent {}
+export class DetailsContainerComponent {
+  readonly componentDetails: ComponentDetail[] = [
+    { name:'details-info-card',label:'Experience' },
+    { name:'education',label:'Formation' },
+    { name : 'lang-hobbies',label:'Langues & Centre d\'interet' }];
+}
