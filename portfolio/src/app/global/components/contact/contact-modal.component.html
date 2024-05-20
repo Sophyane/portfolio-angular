@@ -1,33 +1,31 @@
 <section>
   <form [formGroup]="contactFormGroup" class="space-y-6">
-    <div>
+
       <label for="firstName" class="custom-label">Prénom </label>
       <input formControlName="firstName" type="text" name="firstName"
              id="firstName" placeholder="Ton prénom"
              class="custom-input"
              required>
-    </div>
-    <div>
+
       <label for="lastName" class="custom-label">Nom</label>
       <input formControlName="lastName" type="text" name="lastName"
              id="lastName" placeholder="Ton nom"
              class="custom-input"
              required>
-    </div>
-    <div>
-      <label for="telephone" class="custom-label">Ton telephone</label>
+
+      <label for="telephone" class="custom-label">Telephone</label>
       <input formControlName="telephone" type="tel" name="telephone"
              id="telephone"
              class="custom-input"
              placeholder="06 00 00 00 00" required>
-    </div>
-    <div>
-      <label for="email" class="custom-label">Ton email</label>
+
+      <label for="email" class="custom-label">Email</label>
       <input formControlName="email" type="email" name="email"
              id="email"
              class="custom-input"
              placeholder="name@company.com" required>
     </div>
+  
     <div>
       <label for="subject" class="custom-label">Sujet</label>
       <input formControlName="subject" type="text" name="subject"
@@ -35,6 +33,7 @@
              class="custom-input"
              required>
     </div>
+  
     <div>
       <label for="message" class="custom-label">Message</label>
       <textarea formControlName="message" type="text" name="message"
@@ -43,6 +42,11 @@
                 class="resize-none custom-input"
                 required>
       </textarea>
+
+      <button mat-button type="submit" class="w-full custom-button text-white"
+              [disabled]="contactFormGroup.invalid" (click)="onSend()">
+        Envoyer
+      </button>
     </div>
   </form>
 </section>

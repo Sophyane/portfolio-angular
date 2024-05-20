@@ -68,6 +68,22 @@ export class GlobalContainerComponent implements OnInit, OnDestroy {
     });
 
     this.subscription.add(
+      dialogRef.closed.subscribe((contact) => {
+        if (contact) {
+          console.log('create contact...');
+          const contactToSave: Omit<Contact, 'id'> = {
+            firstName: contact?.firstName,
+            lastName: contact.lastName,
+            email: contact.email,
+            telephone: contact.telephone,
+            subject: contact.subject,
+            message: contact.message,
+          };
+          this.contactFacade.createContact(contactToSave).subscribe();
+        } else {
+          console.log('update contact...');
+          this.contactFacade.updateContact(this.contact);
+        }
       dialogRef.closed.subscribe((result) => {
         console.log('The dialog was closed: ', result);
         if (result)
