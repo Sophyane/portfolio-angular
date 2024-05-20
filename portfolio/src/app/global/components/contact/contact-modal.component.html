@@ -24,13 +24,17 @@
              id="email"
              class="custom-input"
              placeholder="name@company.com" required>
-
+    </div>
+  
+    <div>
       <label for="subject" class="custom-label">Sujet</label>
       <input formControlName="subject" type="text" name="subject"
              id="subject" placeholder="Sujet"
              class="custom-input"
              required>
-
+    </div>
+  
+    <div>
       <label for="message" class="custom-label">Message</label>
       <textarea formControlName="message" type="text" name="message"
                 id="message" placeholder="Ton message" cols="5"
@@ -43,7 +47,7 @@
               [disabled]="contactFormGroup.invalid" (click)="onSend()">
         Envoyer
       </button>
-
+    </div>
   </form>
 </section>
 

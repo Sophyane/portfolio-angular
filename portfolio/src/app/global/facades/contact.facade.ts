@@ -4,6 +4,7 @@ import { Contact } from '../models/global.model';
 import { ContactServiceService } from '../services/contact-service.service';
 import { catchError, EMPTY, Observable, tap } from 'rxjs';
 import { CoreFacade } from '../../core/core.facade';
+import { catchError, EMPTY, map, Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ContactFacade {
@@ -15,6 +16,10 @@ export class ContactFacade {
   getAllContacts(): Observable<Contact[]> {
     return this.contactService.getAllContacts().pipe(
       tap((contacts) => {
+
+  getAllContacts(): Observable<Contact[]> {
+    return this.contactService.getAllContacts().pipe(
+      map((contacts) => {
         console.log(contacts);
         return contacts;
       }),
@@ -43,6 +48,7 @@ export class ContactFacade {
       }),
     );
   }
+
 
   public updateContact(contact: Contact) {
     this.contactRepository.updateContact(contact);
