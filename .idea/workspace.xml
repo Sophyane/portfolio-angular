@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42d31ff8-2d9f-4fb0-9f16-2af556c7941c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/portfolio/src/app/global/services/accounting.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/src/app/global/services/accounting.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="update-angular-18" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Sophyane&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: []
+}</component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Sophyane/portfolio-angular.git&quot;,
+    &quot;accountId&quot;: &quot;ddfc093e-0cc0-43f1-93fb-9ef725fd2e5d&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bPeGqSrl4rGQ9eSIm8eiYr5IqB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.portfolio_backend: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cover.component.html.executor&quot;: &quot;Run&quot;,
+    &quot;Karma.EducationComponent.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;quick-fix&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oz/IdeaProjects/portfolio-angular/portfolio/src/app/global&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.run.executor&quot;: &quot;Debug&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/oz/IdeaProjects/portfolio-angular/portfolio/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA 2024.1 EAP.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/src/app/global" />
+      <recent name="$PROJECT_DIR$/portfolio/src/assets/imgs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/src/app" />
+      <recent name="$PROJECT_DIR$/portfolio/src/app/global/repositories" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/portfolio/src/assets/imgs" />
+      <recent name="$PROJECT_DIR$/portfolio/node_modules" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.run">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EducationComponent" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
+      <config-file value="" />
+      <karma-package-dir value="$PROJECT_DIR$/portfolio/node_modules/@angular/cli" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file-path value="$PROJECT_DIR$/portfolio/src/app/global/components/education/education.component.spec.ts" />
+      <test-names>
+        <test-name value="EducationComponent" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="portfolio_backend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="../portfolio_backend/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Docker.portfolio_backend: Compose Deployment" />
+      <item itemvalue="Karma.EducationComponent" />
+      <item itemvalue="npm.run" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.portfolio_backend: Compose Deployment" />
+        <item itemvalue="Karma.EducationComponent" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.48" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.48" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42d31ff8-2d9f-4fb0-9f16-2af556c7941c" name="Changes" comment="" />
+      <created>1706121054035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706121054035</updated>
+      <workItem from="1706121055483" duration="10023000" />
+      <workItem from="1706208559305" duration="8026000" />
+      <workItem from="1706791469843" duration="13371000" />
+      <workItem from="1706822812236" duration="2565000" />
+      <workItem from="1706871807434" duration="37483000" />
+      <workItem from="1707156491193" duration="2438000" />
+      <workItem from="1707227355645" duration="233000" />
+      <workItem from="1707227601693" duration="7898000" />
+      <workItem from="1707243587204" duration="22873000" />
+      <workItem from="1708433319489" duration="586000" />
+      <workItem from="1708433934075" duration="36677000" />
+      <workItem from="1709043702754" duration="635000" />
+      <workItem from="1709047585570" duration="356000" />
+      <workItem from="1709050116939" duration="8080000" />
+      <workItem from="1709299955203" duration="442000" />
+      <workItem from="1709300441548" duration="4969000" />
+      <workItem from="1709751139036" duration="191000" />
+      <workItem from="1709916655507" duration="1752000" />
+      <workItem from="1710773998246" duration="138000" />
+      <workItem from="1710774189928" duration="18749000" />
+      <workItem from="1711550816829" duration="68000" />
+      <workItem from="1711630681517" duration="7143000" />
+      <workItem from="1711893890482" duration="1437000" />
+      <workItem from="1711975796464" duration="341000" />
+      <workItem from="1712056316529" duration="60000" />
+      <workItem from="1712765607510" duration="3222000" />
+      <workItem from="1713811721473" duration="3239000" />
+      <workItem from="1714653178735" duration="2155000" />
+      <workItem from="1714991520618" duration="171000" />
+      <workItem from="1715080596289" duration="4165000" />
+      <workItem from="1715602772674" duration="3741000" />
+      <workItem from="1715975415073" duration="11995000" />
+      <workItem from="1716217547697" duration="1063000" />
+      <workItem from="1716218863143" duration="2471000" />
+      <workItem from="1716222028273" duration="194000" />
+      <workItem from="1716222397233" duration="790000" />
+      <workItem from="1716223202577" duration="3689000" />
+      <workItem from="1716292256143" duration="135000" />
+      <workItem from="1716372093166" duration="2038000" />
+      <workItem from="1716376868789" duration="6705000" />
+      <workItem from="1716565402445" duration="95000" />
+      <workItem from="1716565518745" duration="4645000" />
+      <workItem from="1716586782151" duration="1208000" />
+      <workItem from="1716626568228" duration="8088000" />
+      <workItem from="1716815782466" duration="121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e31b5de0-7a36-4b10-8bc3-d1bf6f025df0" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/cover" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="e31b5de0-7a36-4b10-8bc3-d1bf6f025df0">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

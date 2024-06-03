@@ -1,1 +1,21 @@
-<p> En cours de construction, mise en prod le : 10 mars 2024</p>
+<p> En cours de construction, mise en prod le : 10 juin 2024</p>
+
+<!-- account.component.html -->
+<div>
+  <h2>Account Management</h2>
+
+  <div>
+    <h3>Create Account</h3>
+    <input type="text"  class="custom-input" id="createAccountInput" #createAccountInput placeholder="Enter account name" />
+    <button  class="custom-button" id="createAccountButton" (click)="createAccount(createAccountInput)">Create Account</button>
+  </div>
+
+  <div>
+    <h3>Top Up Account</h3>
+    <input type="text" id="topupAccountInput" class="custom-input" #topupAccountInput placeholder="Enter account name" />
+    <input type="number" id="topupAmountInput" class="custom-input" #topupAmountInput placeholder="Enter amount" />
+    <button class="custom-button" id="topupAccountButton" (click)="topUpAccount(topupAccountInput, topupAmountInput)">Top Up Account</button>
+  </div>
+
+  <div id="message">{{ message }}</div>
+</div>
