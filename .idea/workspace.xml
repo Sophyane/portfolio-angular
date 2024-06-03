@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d31ff8-2d9f-4fb0-9f16-2af556c7941c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/global/services/accounting.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/global/services/accounting.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/app/global/containers/map-container/map-container.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,6 +239,7 @@
       <workItem from="1716586782151" duration="1208000" />
       <workItem from="1716626568228" duration="8088000" />
       <workItem from="1716815782466" duration="121000" />
+      <workItem from="1717410424473" duration="317000" />
     </task>
     <servers />
   </component>
