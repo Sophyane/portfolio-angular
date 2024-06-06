@@ -30,7 +30,7 @@ import { Contact } from '../../models/global.model';
   styleUrls: ['./global-container.component.scss'],
 })
 export class GlobalContainerComponent implements OnInit, OnDestroy {
-  isDarkMode = false;
+  public isDarkMode = false;
   public dialog: Dialog = inject(Dialog);
   private contactFacade: ContactFacade = inject(ContactFacade);
   subscription: Subscription = new Subscription();
@@ -48,7 +48,7 @@ export class GlobalContainerComponent implements OnInit, OnDestroy {
     }
   }
 
-  toggleDarkMode() {
+  public toggleDarkMode() {
     if (typeof localStorage !== 'undefined') {
       this.isDarkMode = !this.isDarkMode;
       localStorage.setItem('isDarkMode', String(this.isDarkMode));
@@ -56,12 +56,12 @@ export class GlobalContainerComponent implements OnInit, OnDestroy {
     }
   }
 
-  private updateBodyClass() {
+  public updateBodyClass() {
     const className = this.isDarkMode ? 'dark' : 'light';
     this.renderer.setAttribute(this.document.body, 'class', className);
   }
 
-  openDialog(): void {
+ public openDialog(): void {
     const dialogRef = this.dialog.open<Contact>(ContactModalComponent, {
       panelClass: 'contact-dialog-container',
       width: '70%',

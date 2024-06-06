@@ -5,6 +5,7 @@ import { environment } from './environnements/environnement';
 import { enableProdMode } from '@angular/core';
 import { enableElfProdMode } from '@ngneat/elf';
 import { devTools } from '@ngneat/elf-devtools';
+import { HttpClientModule } from '@angular/common/http';
 
 if (environment.production) {
   enableProdMode();

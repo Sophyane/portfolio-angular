@@ -1,16 +1,17 @@
 import { ContactRepository } from "../repositories/contact.repository";
 import { inject, Injectable } from "@angular/core";
 import { Contact } from "../models/global.model";
-import { ContactServiceService } from "../services/contact-service.service";
+import { ContactService } from "../services/contact.service";
 import { catchError, EMPTY, Observable, tap } from "rxjs";
 import { CoreFacade } from "../../core/core.facade";
 
-@Injectable({ providedIn: "root" })
+@Injectable({ providedIn: 'root' })
 export class ContactFacade {
   public contactRepository: ContactRepository = inject(ContactRepository);
-  contactService = inject(ContactServiceService);
   public contact$ = this.contactRepository.contact$;
   private coreFacade = inject(CoreFacade);
+
+  constructor(private contactService: ContactService) {}
 
   getAllContacts(): Observable<Contact[]> {
     return this.contactService.getAllContacts().pipe(
@@ -26,7 +27,7 @@ export class ContactFacade {
     );
   }
 
-  createContact(contact: Omit<Contact, "id">): Observable<Contact> {
+  createContact(contact: Omit<Contact, 'id'>): Observable<Contact> {
     return this.contactService.createContact(contact).pipe(
       tap((contact) => {
         this.contactRepository.updateContact(contact);

@@ -10,6 +10,4 @@ import { NgOptimizedImage } from '@angular/common';
   templateUrl: './cover.component.html',
   styleUrl: './cover.component.scss'
 })
-export class CoverComponent {
-
-}
+export class CoverComponent { }
