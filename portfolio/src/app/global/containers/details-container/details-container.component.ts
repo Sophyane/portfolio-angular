@@ -34,6 +34,7 @@ export interface ComponentDetail {
     RouterLink,
     NgFor,
     NgIf,
+  
   ],
   templateUrl: './details-container.component.html',
   styleUrl: './details-container.component.scss',
