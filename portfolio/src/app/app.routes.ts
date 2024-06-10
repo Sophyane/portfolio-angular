@@ -1,23 +1,21 @@
 import { Routes } from '@angular/router';
-import { DetailsContainerComponent } from './global/containers/details-container/details-container.component';
-import { MapContainerComponent } from './global/containers/map-container/map-container.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: DetailsContainerComponent,
+    loadComponent: () => import('./global/containers/details-container/details-container.component').then(c => c.DetailsContainerComponent),
   },
 
   {
     path: 'map',
-    component: MapContainerComponent,
+    loadComponent: () => import('./global/containers/map-container/map-container.component').then(c => c.MapContainerComponent),
   },
   {
     path: 'details',
-    component: DetailsContainerComponent,
+    loadComponent: () => import('./global/containers/details-container/details-container.component').then(c => c.DetailsContainerComponent),
   },
   {
     path: '**',
-    component: DetailsContainerComponent,
-  },
+    redirectTo: '',
+ },
 ];
