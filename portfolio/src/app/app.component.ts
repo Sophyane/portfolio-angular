@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GlobalContainerComponent } from './global/containers/global-container/global-container.component';
+import { DetailsContainerComponent } from './global/containers/details-container/details-container.component';
 
 @Component({
   selector: 'app-root',
