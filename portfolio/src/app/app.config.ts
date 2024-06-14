@@ -18,6 +18,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom([
       BrowserModule,
       BrowserAnimationsModule,
-    ])
+    ]),
   ],
 };
